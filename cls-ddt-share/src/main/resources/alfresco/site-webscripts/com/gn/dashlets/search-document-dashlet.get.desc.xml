@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>Search Document</shortname>
+    <description>Search DDT Document Dashlet for CLS</description>
+    <family>dashlet</family>
+    <url>/components/dashlets/search-workflow</url>
+</webscript>

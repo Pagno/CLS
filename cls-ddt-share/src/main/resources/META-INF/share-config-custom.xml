@@ -1,0 +1,242 @@
+<alfresco-config>
+	<!-- Document Library config section -->
+	<config evaluator="string-compare" condition="DocumentLibrary">
+
+		<types>
+			<type name="cm:content">
+				<subtype name="gn:ddt" />
+			</type>
+		</types>
+	</config>
+
+	<!-- cm:content type (existing nodes) -->
+	<config evaluator="node-type" condition="gn:ddt">
+		<forms>
+			<form>
+				<field-visibility>
+					<show id="gn:riferimento" />
+					<show id="gn:numeroddt" />
+					<show id="gn:dataddt" />
+					<show id="gn:datacaricamento" />
+					<show id="gn:codicecliente" />
+					<show id="gn:codice" />
+					<show id="gn:paese" />
+					<show id="gn:via" />
+					<show id="gn:regione" />
+					<show id="gn:stato" />
+					<show id="gn:cap" />
+				</field-visibility>
+				<appearance>
+					<field id="gn:riferimento" label-id="gn.chiavesap" />
+					<field id="gn:numeroddt" label-id="gn.numeroddt" />
+					<field id="gn:dataddt" label-id="gn.dataddt" />
+					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
+					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:codice" label-id="gn.codice" />
+					<field id="gn:paese" label-id="gn.paese" />
+					<field id="gn:via" label-id="gn.via" />
+					<field id="gn:regione" label-id="gn.regione" />
+					<field id="gn:stato" label-id="gn.stato" />
+					<field id="gn:cap" label-id="gn.cap" />
+				</appearance>
+			</form>
+
+			<form id="doclib-simple-metadata">
+				<field-visibility>
+					<show id="gn:riferimento" />
+					<show id="gn:numeroddt" />
+					<show id="gn:dataddt" />
+					<show id="gn:datacaricamento" />
+					<show id="gn:codicecliente" />
+					<show id="gn:codice" />
+					<show id="gn:paese" />
+					<show id="gn:via" />
+					<show id="gn:regione" />
+					<show id="gn:stato" />
+					<show id="gn:cap" />
+				</field-visibility>
+				<appearance>
+					<field id="gn:riferimento" label-id="gn.chiavesap" />
+					<field id="gn:numeroddt" label-id="gn.numeroddt" />
+					<field id="gn:dataddt" label-id="gn.dataddt" />
+					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
+					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:codice" label-id="gn.codice" />
+					<field id="gn:paese" label-id="gn.paese" />
+					<field id="gn:via" label-id="gn.via" />
+					<field id="gn:regione" label-id="gn.regione" />
+					<field id="gn:stato" label-id="gn.stato" />
+					<field id="gn:cap" label-id="gn.cap" />
+				</appearance>
+			</form>
+
+			<form id="doclib-inline-edit">
+				<field-visibility>
+					<show id="gn:riferimento" />
+					<show id="gn:numeroddt" />
+					<show id="gn:dataddt" />
+					<show id="gn:datacaricamento" />
+					<show id="gn:codicecliente" />
+					<show id="gn:codice" />
+					<show id="gn:paese" />
+					<show id="gn:via" />
+					<show id="gn:regione" />
+					<show id="gn:stato" />
+					<show id="gn:cap" />
+				</field-visibility>
+				<appearance>
+					<field id="gn:riferimento" label-id="gn.chiavesap" />
+					<field id="gn:numeroddt" label-id="gn.numeroddt" />
+					<field id="gn:dataddt" label-id="gn.dataddt" />
+					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
+					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:codice" label-id="gn.codice" />
+					<field id="gn:paese" label-id="gn.paese" />
+					<field id="gn:via" label-id="gn.via" />
+					<field id="gn:regione" label-id="gn.regione" />
+					<field id="gn:stato" label-id="gn.stato" />
+					<field id="gn:cap" label-id="gn.cap" />
+				</appearance>
+			</form>
+		</forms>
+	</config>
+
+	<!-- cm:content type (creating nodes) -->
+	<config evaluator="model-type" condition="gn:ddt">
+		<forms>
+			<form id="search">
+				<field-visibility>
+					<show id="gn:riferimento" />
+					<show id="gn:numeroddt" />
+					<show id="gn:dataddt" />
+					<show id="gn:datacaricamento" />
+					<show id="gn:codicecliente" />
+					<show id="gn:codice" />
+					<show id="gn:paese" />
+					<show id="gn:via" />
+					<show id="gn:regione" />
+					<show id="gn:stato" />
+					<show id="gn:cap" />
+				</field-visibility>
+				<appearance>
+					<field id="gn:riferimento" label-id="gn.chiavesap" />
+					<field id="gn:numeroddt" label-id="gn.numeroddt" />
+					<field id="gn:dataddt" label-id="gn.dataddt" />
+					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
+					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:codice" label-id="gn.codice" />
+					<field id="gn:paese" label-id="gn.paese" />
+					<field id="gn:via" label-id="gn.via" />
+					<field id="gn:regione" label-id="gn.regione" />
+					<field id="gn:stato" label-id="gn.stato" />
+					<field id="gn:cap" label-id="gn.cap" />
+				</appearance>
+			</form>
+
+			<form>
+				<field-visibility>
+					<show id="gn:riferimento" />
+					<show id="gn:numeroddt" />
+					<show id="gn:dataddt" />
+					<show id="gn:datacaricamento" />
+					<show id="gn:codicecliente" />
+					<show id="gn:codice" />
+					<show id="gn:paese" />
+					<show id="gn:via" />
+					<show id="gn:regione" />
+					<show id="gn:stato" />
+					<show id="gn:cap" />
+				</field-visibility>
+				<appearance>
+					<field id="gn:riferimento" label-id="gn.chiavesap" />
+					<field id="gn:numeroddt" label-id="gn.numeroddt" />
+					<field id="gn:dataddt" label-id="gn.dataddt" />
+					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
+					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:codice" label-id="gn.codice" />
+					<field id="gn:paese" label-id="gn.paese" />
+					<field id="gn:via" label-id="gn.via" />
+					<field id="gn:regione" label-id="gn.regione" />
+					<field id="gn:stato" label-id="gn.stato" />
+					<field id="gn:cap" label-id="gn.cap" />
+				</appearance>
+			</form>
+
+			<form id="doclib-simple-metadata">
+				<field-visibility>
+					<show id="gn:riferimento" />
+					<show id="gn:numeroddt" />
+					<show id="gn:dataddt" />
+					<show id="gn:datacaricamento" />
+					<show id="gn:codicecliente" />
+					<show id="gn:codice" />
+					<show id="gn:paese" />
+					<show id="gn:via" />
+					<show id="gn:regione" />
+					<show id="gn:stato" />
+					<show id="gn:cap" />
+				</field-visibility>
+				<appearance>
+					<field id="gn:riferimento" label-id="gn.chiavesap" />
+					<field id="gn:numeroddt" label-id="gn.numeroddt" />
+					<field id="gn:dataddt" label-id="gn.dataddt" />
+					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
+					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:codice" label-id="gn.codice" />
+					<field id="gn:paese" label-id="gn.paese" />
+					<field id="gn:via" label-id="gn.via" />
+					<field id="gn:regione" label-id="gn.regione" />
+					<field id="gn:stato" label-id="gn.stato" />
+					<field id="gn:cap" label-id="gn.cap" />
+				</appearance>
+			</form>
+
+			<form id="doclib-inline-edit">
+				<field-visibility>
+					<show id="gn:riferimento" />
+					<show id="gn:numeroddt" />
+					<show id="gn:dataddt" />
+					<show id="gn:datacaricamento" />
+					<show id="gn:codicecliente" />
+					<show id="gn:codice" />
+					<show id="gn:paese" />
+					<show id="gn:via" />
+					<show id="gn:regione" />
+					<show id="gn:stato" />
+					<show id="gn:cap" />
+				</field-visibility>
+				<appearance>
+					<field id="gn:riferimento" label-id="gn.chiavesap" />
+					<field id="gn:numeroddt" label-id="gn.numeroddt" />
+					<field id="gn:dataddt" label-id="gn.dataddt" />
+					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
+					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:codice" label-id="gn.codice" />
+					<field id="gn:paese" label-id="gn.paese" />
+					<field id="gn:via" label-id="gn.via" />
+					<field id="gn:regione" label-id="gn.regione" />
+					<field id="gn:stato" label-id="gn.stato" />
+					<field id="gn:cap" label-id="gn.cap" />
+				</appearance>
+			</form>
+		</forms>
+	</config>
+
+
+	<config evaluator="string-compare" condition="AdvancedSearch">
+		<advanced-search>
+			<!-- Forms for the advanced search type list -->
+			<forms>
+				<!-- The 'form' config element contains the name of the model type of the form to display. The element supports the following optional attributes: id = form id, the id of "search" will be assumed if -->
+				<!-- not set label = label text to display - defaults to model type if not set labelId = I18N message id of label text to display description = description text to display descriptionId = I18N message 
+					id of -->
+				<!-- description text to display -->
+				<!-- <form labelId="search.form.label.cm_content" descriptionId="search.form.desc.cm_content">cm:content</form> -->
+				<!-- <form labelId="search.form.label.cm_folder" descriptionId="search.form.desc.cm_folder">cm:folder</form> -->
+				<!-- <form labelId="type.gn_ddt" descriptionId="search.form.desc.gn_numdtt">gn:ddt</form> -->
+				<form label="DDT" description="Cerca Documento Di Trasporto ">gn:ddt</form>
+			</forms>
+		</advanced-search>
+	</config>
+
+</alfresco-config>
