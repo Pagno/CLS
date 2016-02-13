@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definition of new Model -->
+<model name="gn:gnInformatica" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+	<!-- Optional meta-data about the model -->
+	<description>Modello gestione Fatture</description>
+	<author>Matteo Pagnoncelli</author>
+	<version>1.0</version>
+
+	<!-- Imports are required to allow references to definitions in other models -->
+	<imports>
+		<!-- Import Alfresco Dictionary Definitions -->
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+		<!-- Import Alfresco Content Domain Model Definitions -->
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+	</imports>
+	
+	<!-- Introduction of new namespaces defined by this model -->
+	<namespaces>
+		<namespace uri="gninformatica.invoice" prefix="gn" />
+	</namespaces>
+	<constraints>
+		<constraint name="gn:campaignList" type="LIST">
+			<parameter name="allowedValues">
+				<list>
+					<value>Application Syndication</value>
+					<value>Private Event Retailing</value>
+					<value>Social Shopping</value>
+				</list>
+			</parameter>
+		</constraint>
+	</constraints>
+
+	<types>
+		<!-- Enterprise-wide generic document type -->
+
+
+		<type name="gn:ddt">
+			<title>DDT</title>
+			<parent>cm:content</parent>
+			<properties>
+				<property name="gn:riferimento">
+					<type>d:text</type>
+				</property>
+				<property name="gn:numeroddt">
+					<type>d:text</type>
+				</property>
+				<property name="gn:dataddt">
+					<type>d:date</type>
+				</property>
+				<property name="gn:datacaricamento">
+					<type>d:date</type>
+				</property>
+				<property name="gn:codicecliente">
+					<type>d:text</type>
+				</property>
+				<property name="gn:cliente">
+					<type>d:text</type>
+				</property>
+				<property name="gn:paese">
+					<type>d:text</type>
+				</property>
+				<property name="gn:via">
+					<type>d:text</type>
+				</property>
+				<property name="gn:regione">
+					<type>d:text</type>
+				</property>
+				<property name="gn:stato">
+					<type>d:text</type>
+				</property>
+				<property name="gn:cap">
+					<type>d:text</type>
+				</property>
+			</properties>
+			<mandatory-aspects>
+				<aspect>cm:generalclassifiable</aspect>
+			</mandatory-aspects>
+		</type>
+
+	</types>
+</model>

@@ -37,5 +37,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/MAtteo/Documents/Documentazione/SAP/sapjco3-NTAMD64-3.0.13/sapjco3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
