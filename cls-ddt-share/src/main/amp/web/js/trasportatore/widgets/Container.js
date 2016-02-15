@@ -1,18 +1,27 @@
-define(["dojo/_base/declare",
-        "dijit/_WidgetBase",
-        "alfresco/core/Core",
-        "dijit/_TemplatedMixin",
-        "dojo/text!./templates/Container.html"
-    ],
-    function(declare, _Widget, Core, _Templated, template) {
-        return declare([_Widget, Core, _Templated], {
-            templateString: template,
-            cssRequirements: [{cssFile:"./css/Container.css"}],
-            
-            buildRendering: function example_widgets_TemplateWidget__buildRendering() {
-               
-                this.inherited(arguments);
+/**
+ * @author Paolo Predonzani (http://softwareloop.com/)
+ */
 
-            }
-        });
+define([
+    "alfresco/core/ProcessWidgets",
+    'dojo/_base/declare',
+    'dojo/text!./templates/Container.html',
+    "dojo/topic",
+    "dojo/hash",
+    "dojo/_base/lang",
+    "dijit/registry",
+    "dojo/query",
+    "dojo/ready"
+], function (ProcessWidgets, declare, template, topic, hash, lang, registry, query, ready) {
+    return declare([ProcessWidgets], {
+        cssRequirements: [
+            {cssFile: "./css/Container.css"}
+        ],
+
+        templateString: template,
+
+        buildRendering: function () {
+            this.inherited(arguments);
+        }
+    });
 });

@@ -4,7 +4,7 @@ if (sitesMenu) {
 }
 
 
-var s = widgetUtils.deleteObjectFromArray(model.jsonModel, "id", "HEADER_TITLE_MENU");
+//var s = widgetUtils.deleteObjectFromArray(model.jsonModel, "id", "HEADER_TITLE_MENU");
 
 sitesMenu.config.renderFilterMethod = "ALL";
 

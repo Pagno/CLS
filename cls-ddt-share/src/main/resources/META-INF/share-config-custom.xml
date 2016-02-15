@@ -18,6 +18,7 @@
 					<show id="gn:numeroddt" />
 					<show id="gn:dataddt" />
 					<show id="gn:datacaricamento" />
+					<show id="gn:cliente" />
 					<show id="gn:codicecliente" />
 					<show id="gn:codice" />
 					<show id="gn:paese" />
@@ -32,6 +33,7 @@
 					<field id="gn:dataddt" label-id="gn.dataddt" />
 					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
 					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:cliente" label-id="gn.cliente" />
 					<field id="gn:codice" label-id="gn.codice" />
 					<field id="gn:paese" label-id="gn.paese" />
 					<field id="gn:via" label-id="gn.via" />
@@ -48,6 +50,7 @@
 					<show id="gn:dataddt" />
 					<show id="gn:datacaricamento" />
 					<show id="gn:codicecliente" />
+					<show id="gn:cliente" />
 					<show id="gn:codice" />
 					<show id="gn:paese" />
 					<show id="gn:via" />
@@ -61,6 +64,7 @@
 					<field id="gn:dataddt" label-id="gn.dataddt" />
 					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
 					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:cliente" label-id="gn.cliente" />
 					<field id="gn:codice" label-id="gn.codice" />
 					<field id="gn:paese" label-id="gn.paese" />
 					<field id="gn:via" label-id="gn.via" />
@@ -77,6 +81,7 @@
 					<show id="gn:dataddt" />
 					<show id="gn:datacaricamento" />
 					<show id="gn:codicecliente" />
+					<show id="gn:cliente" />
 					<show id="gn:codice" />
 					<show id="gn:paese" />
 					<show id="gn:via" />
@@ -90,6 +95,7 @@
 					<field id="gn:dataddt" label-id="gn.dataddt" />
 					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
 					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:cliente" label-id="gn.cliente" />
 					<field id="gn:codice" label-id="gn.codice" />
 					<field id="gn:paese" label-id="gn.paese" />
 					<field id="gn:via" label-id="gn.via" />
@@ -111,6 +117,7 @@
 					<show id="gn:dataddt" />
 					<show id="gn:datacaricamento" />
 					<show id="gn:codicecliente" />
+					<show id="gn:cliente" />
 					<show id="gn:codice" />
 					<show id="gn:paese" />
 					<show id="gn:via" />
@@ -124,6 +131,7 @@
 					<field id="gn:dataddt" label-id="gn.dataddt" />
 					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
 					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:cliente" label-id="gn.cliente" />
 					<field id="gn:codice" label-id="gn.codice" />
 					<field id="gn:paese" label-id="gn.paese" />
 					<field id="gn:via" label-id="gn.via" />
@@ -140,6 +148,7 @@
 					<show id="gn:dataddt" />
 					<show id="gn:datacaricamento" />
 					<show id="gn:codicecliente" />
+					<show id="gn:cliente" />
 					<show id="gn:codice" />
 					<show id="gn:paese" />
 					<show id="gn:via" />
@@ -153,6 +162,7 @@
 					<field id="gn:dataddt" label-id="gn.dataddt" />
 					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
 					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:cliente" label-id="gn.cliente" />
 					<field id="gn:codice" label-id="gn.codice" />
 					<field id="gn:paese" label-id="gn.paese" />
 					<field id="gn:via" label-id="gn.via" />
@@ -169,6 +179,7 @@
 					<show id="gn:dataddt" />
 					<show id="gn:datacaricamento" />
 					<show id="gn:codicecliente" />
+					<show id="gn:cliente" />
 					<show id="gn:codice" />
 					<show id="gn:paese" />
 					<show id="gn:via" />
@@ -182,6 +193,7 @@
 					<field id="gn:dataddt" label-id="gn.dataddt" />
 					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
 					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:cliente" label-id="gn.cliente" />
 					<field id="gn:codice" label-id="gn.codice" />
 					<field id="gn:paese" label-id="gn.paese" />
 					<field id="gn:via" label-id="gn.via" />
@@ -198,6 +210,7 @@
 					<show id="gn:dataddt" />
 					<show id="gn:datacaricamento" />
 					<show id="gn:codicecliente" />
+					<show id="gn:cliente" />
 					<show id="gn:codice" />
 					<show id="gn:paese" />
 					<show id="gn:via" />
@@ -211,6 +224,7 @@
 					<field id="gn:dataddt" label-id="gn.dataddt" />
 					<field id="gn:datacaricamento" label-id="gn.datacaricamento" />
 					<field id="gn:codicecliente" label-id="gn.codicecliente" />
+					<field id="gn:cliente" label-id="gn.cliente" />
 					<field id="gn:codice" label-id="gn.codice" />
 					<field id="gn:paese" label-id="gn.paese" />
 					<field id="gn:via" label-id="gn.via" />

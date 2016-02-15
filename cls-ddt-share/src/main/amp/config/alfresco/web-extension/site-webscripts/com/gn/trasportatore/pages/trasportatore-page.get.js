@@ -4,17 +4,9 @@ var inboxes = {
 	    	widgets:[{
 				name: "trasportatore/widgets/Group",
 				config:{
-					id:"Upload Documents",
+					id:"drafts",
 					widgets:[{
 						name : "trasportatore/widgets/FileUpload"
-					}]
-				}
-		    },{
-		    	name: "trasportatore/upload/Group",
-		    	config:{
-					id:"Search Documents",
-					widgets :[{
-						name: "trasportatore/widgets/Search",
 					}]
 				}
 		    }]

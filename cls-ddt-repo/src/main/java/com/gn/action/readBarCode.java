@@ -59,11 +59,14 @@ public class readBarCode extends ActionExecuterAbstractBase {
     public static final String PARAM_DESTINATION_ERROR_FOLDER = "destination-error-folder";
     static String DESTINATION_NAME1 = "ABAP_AS_WITHOUT_POOL";
     
+
+
 	private ContentService contentService;
 	private NodeService nodeService;
 	private AuthenticationService authenticationService;
 	private FileFolderService fileFolderService;
-
+	
+	
 	@Override
 	protected void executeImpl(Action ruleAction, NodeRef nodeRef) {
 		
@@ -168,5 +171,30 @@ public class readBarCode extends ActionExecuterAbstractBase {
 	protected void addParameterDefinitions(List<ParameterDefinition> arg0) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public ContentService getContentService() {
+		return contentService;
+	}
+	public void setContentService(ContentService contentService) {
+		this.contentService = contentService;
+	}
+	public NodeService getNodeService() {
+		return nodeService;
+	}
+	public void setNodeService(NodeService nodeService) {
+		this.nodeService = nodeService;
+	}
+	public AuthenticationService getAuthenticationService() {
+		return authenticationService;
+	}
+	public void setAuthenticationService(AuthenticationService authenticationService) {
+		this.authenticationService = authenticationService;
+	}
+	public FileFolderService getFileFolderService() {
+		return fileFolderService;
+	}
+	public void setFileFolderService(FileFolderService fileFolderService) {
+		this.fileFolderService = fileFolderService;
 	}
 }

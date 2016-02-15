@@ -1,20 +1,31 @@
-define(["dojo/_base/declare",
-        "dijit/_WidgetBase",
-        "alfresco/core/Core",
-        "dijit/_TemplatedMixin",
-        "dojo/text!./templates/TemplateWidget.html"
-    ],
-    function(declare, _Widget, Core, _Templated, template) {
-        return declare([_Widget, Core, _Templated], {
-            templateString: template,
-            i18nRequirements: [ {i18nFile: "./i18n/TemplateWidget.properties"} ],
-            cssRequirements: [{cssFile:"./css/TemplateWidget.css"}],
-            
-            buildRendering: function example_widgets_TemplateWidget__buildRendering() {
-                this.greeting = this.message('hello-label');
+/**
+ * @author Paolo Predonzani (http://softwareloop.com/)
+ */
 
-                this.inherited(arguments);
+define([
+    "alfresco/core/ProcessWidgets",
+    'dojo/_base/declare',
+    'dojo/text!./templates/Group.html'
+], function (ProcessWidgets, declare, template) {
+    return declare([ProcessWidgets], {
+        templateString: template,
 
+        i18nRequirements: [
+            {i18nFile: "./i18n/messages.properties"}
+        ],
+
+        cssRequirements: [
+            {cssFile: "./css/Group.css"}
+        ],
+
+        title: '',
+
+        buildRendering: function () {
+            if (this.id) {
+                this.title = this.message(this.id);
             }
-        });
+            this.inherited(arguments);
+        }
+
+    });
 });

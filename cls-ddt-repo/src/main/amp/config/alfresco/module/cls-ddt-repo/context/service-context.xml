@@ -17,7 +17,6 @@
     limitations under the License.
 -->
 <beans>
-    <beans>
 	<!-- Custom Invoice Model -->
 	<bean id="${project.artifactId}_dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
 		<property name="models">

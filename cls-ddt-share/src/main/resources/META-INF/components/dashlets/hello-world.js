@@ -149,10 +149,9 @@ if (typeof Extras == "undefined" || !Extras) {
 	      					<span><strong>'+messages.title+'</strong> {wfTitle}</span>\
 	      				</div>\
 	      				<div class="wf-properties">\
-	      					<span class="property"><strong>'+messages.before+'</strong> {days} {annot}</span>\
-	      					<span class="property"><strong>'+messages.from+'</strong> {from}</span>\
+	      					<span class="property"><strong>'+messages.from+'</strong> {type}</span>\
 	      					<span class="property"><strong>'+messages.priority+'</strong> {priority}</span>\
-	      					<span class="property"><strong>'+messages.type+'</strong> {type}</span>\
+	      					<span class="property"><strong>'+messages.type+'</strong> {cliente}</span>\
 	      				</div>\
 	      			</div>\
 	      		</a>\
@@ -510,7 +509,7 @@ if (typeof Extras == "undefined" || !Extras) {
       		 url: Extras.getWorkflowURL(wf.riferimento),
       		 isDone: "done",
       		 wfTitle: wf.numeroddt,
-      		 from: wf.cliente,
+      		 cliente: wf.cliente,
       		 type: wf.codicecliente,
       		 days: wf.cliente,
       		 annot: "",
@@ -541,7 +540,7 @@ if (typeof Extras == "undefined" || !Extras) {
 	 */
 	Extras.getWorkflowURL = function(id) {
 		
-		url = "/alfresco/s/helloworld?key="+id;
+		url = Alfresco.constants.PROXY_URI + "getddt?key="+id;
 			
 		return url;
 	};
